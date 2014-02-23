@@ -7,7 +7,17 @@
 	</head>
 
 	<body>
+
+		{% if messages %}
+		<div id="notice_wrapper">
+			{% for message in messages %}
+			<p class="notice">{{ message }}</p>
+			{% endfor %}
+		</div>
+		{% endif %}
+
 		{% block content %}
 		{% endblock content %}
+
 	</body>
 </html>
