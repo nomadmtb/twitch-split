@@ -12,6 +12,7 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^(\w+)$', views.one_full, name="one_full"),
+    url(r'^(\w+)/(\w+)$', views.two_horiz, name="two_horiz"),
 )
 
 # For Development ONLY. Remove when in production...

@@ -2,4 +2,8 @@
 
 {% block content %}
 
+{% for stream in streams %}
+	{% include 'video_embed.html' with channel=stream %}
+{% endfor %}
+
 {% endblock content %}

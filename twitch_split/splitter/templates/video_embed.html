@@ -1,11 +1,13 @@
 {% block video_embed %}
 
-<object bgcolor='#000000' data='http://www.twitch.tv/widgets/archive_embed_player.swf' height='{{ height }}' id='clip_embed_player_flash' type='application/x-shockwave-flash' width='{{ width }}'>
+<div class="{{ layout }}">
+<object bgcolor='#000000' data='http://www.twitch.tv/widgets/archive_embed_player.swf' height='100%' id='clip_embed_player_flash' type='application/x-shockwave-flash' width='100%'>
 	<param name='movie' value='http://www.twitch.tv/widgets/archive_embed_player.swf' />
 	<param name='allowScriptAccess' value='always' />
 	<param name='allowNetworking' value='all' />
 	<param name='allowFullScreen' value='true' />
 	<param name='flashvars' value='channel={{ channel }}&start_volume=65&auto_play=true' />
 </object>
+</div>
 
 {% endblock video_embed %}
