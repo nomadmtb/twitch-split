@@ -1,12 +1,28 @@
+.fiber_pattern {
+	background-image: url('/static/images/fiber_pattern.png');
+}
+
 .zero_mp {
 	margin: 0;
 	padding: 0;
+}
+
+.inner_shadow {
+	-webkit-box-shadow: inset 0px 22px 38px -10px rgba(0,0,0,0.50);
+    -moz-box-shadow: inset 0px 22px 38px -10px rgba(0,0,0,0.50);
+    box-shadow: inset 0px 22px 38px -10px rgba(0,0,0,0.50);
+}
+
+.border {
+	border-bottom: 1px solid #7CCBF2;
 }
 
 html {
 	.zero_mp;
 	height: 100%;
 	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
 }
 
 body {
@@ -25,4 +41,22 @@ body {
 	.zero_mp;
 	width: 100%;
 	height: 50%;
+}
+
+#notice_wrapper {
+	width: 100%;
+	height: 100px;
+	.fiber_pattern;
+	.zero_mp;
+	.inner_shadow;
+	.border;
+}
+
+.notice {
+	.zero_mp;
+	padding-top: 25px;
+	font-style: italic;
+	font-size: 35px;
+	text-align: center;
+	color: darkgray;
 }
