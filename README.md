@@ -12,8 +12,15 @@ How do you use it?
 ------------------
 
 To use Twitch-Split users just need to add their desired streams to the URL.
-Examples:
 
-> GET: http://domain.com/goldglove/actabunnifoofoo --> Will generate a page for users goldglove and actabunnifoofoo.
-> GET: http://domain.com/goldglove/actabunnifoofoo?orientation=vertical --> Future development will allow for a specific layout with GET parameter.
-> GET: http://domain.com/goldglove/blablaerror --> Streams that dont exist via the Twitch API will generate an error notification.
+* GET: http://domain.com/goldglove
+> Will generate a view for a single stream.
+
+* GET: http://domain.com/goldglove/actabunnifoofoo
+> Will generate a page for users goldglove and actabunnifoofoo.
+
+* GET: http://domain.com/goldglove/actabunnifoofoo?orientation=vertical
+> Future development will allow for a specific layout with GET parameter.
+
+* GET: http://domain.com/goldglove/blablaerror
+> Streams that dont exist via the Twitch API will generate an error notification.
