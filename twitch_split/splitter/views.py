@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from splitter import lib
 from django.contrib import messages
+from django.http import HttpResponseRedirect
 
 # Create your views here.
 
@@ -19,6 +20,8 @@ def two_horiz(request, param_username_1, param_username_2):
 
 	if lib.validate_streams(entered_streams) == False:
 		messages.add_message(request, messages.ERROR, 'ERROR: Invalid STREAM')
+		return HttpResponseRedirect('/')
+
 
 	orientation = request.GET.get('orientation', 'horizontal')
 

@@ -2,8 +2,23 @@
 
 {% block content %}
 
+<div id="float_left">
+	<div class="title"><p>{{ streams.0 }} chat</p></div>
+{% include 'chat_embed.html' with channel=streams.0 %}
+</div>
+
+<div id="float_middle">
+		<div class="title"><p>{{ streams.0 }} / {{ streams.1 }}</p></div>
 {% for stream in streams %}
 	{% include 'video_embed.html' with channel=stream %}
 {% endfor %}
+</div>
+
+<div id="float_right">
+	<div class="title"><p>{{ streams.1 }} chat</p></div>
+{% include 'chat_embed.html' with channel=streams.1 %}
+</div>
+
+<div class="div_clear"></div>
 
 {% endblock content %}

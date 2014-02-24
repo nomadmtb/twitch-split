@@ -13,6 +13,33 @@
 .border {
   border-bottom: 1px solid #7CCBF2;
 }
+#float_left {
+  width: 25%;
+  height: 96%;
+  float: left;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+#float_right {
+  width: 25%;
+  float: left;
+  height: 96%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+#float_middle {
+  width: 50%;
+  float: left;
+  height: 96%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.clear_div {
+  clear: both;
+}
 html {
   margin: 0;
   padding: 0;
@@ -32,6 +59,18 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
+}
+.title {
+  display: block;
+  background-color: gray;
+  height: 23px;
+  margin: 0;
+  padding: 0;
+}
+.title p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 .two_horiz {
   margin: 0;
