@@ -1,7 +1,7 @@
 twitch-split
 ============
 
-![](https://raw.github.com/nomadmtb/twitch_split/master/README_FILES/double_sample.gif)
+![](https://raw.github.com/nomadmtb/twitch-split/master/README_FILES/sample_double.gif)
 
 
 A simple webapp that allows users to generate a webpage that has N number of embedded twitch streams.
